@@ -1,4 +1,55 @@
-.page {
-  background-color: var(--secondary-color);
-  padding: 1rem;
+#home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(255, 105, 180, 0.1), transparent);
+  pointer-events: none;
+  z-index: 0;
+}
+#home h1 {
+  font-size: 52px;
+  color: var(--secondary-color);
+}
+
+#home h1 span {
+  color: var(--primary-color);
+}
+#home h2 {
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+#home p {
+  font-size: x-large;
+  color: var(--secondary-color);
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+.buttons a {
+  font-size: 23px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin: 3rem;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px var(--text-muted);
+}
+.buttons a:hover {
+  background-color: rgba(255, 105, 180, 0.8);
+  color: var(--secondary-color);
+  box-shadow: 0 0 20px var(--secondary-color);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
